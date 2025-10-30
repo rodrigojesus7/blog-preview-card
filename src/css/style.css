@@ -1,12 +1,114 @@
 :root{
     --page-background-color: hsl(47, 88%, 63%);
-    --card-background-color: hsl(0, 0%, 100%)
-    --light-color: hsl(0, 0%, 42%)
-    --dark-color: hsl(0, 0%, 7%)
+    --card-background-color: hsl(0, 0%, 100%);
+    --light-color: hsl(0, 0%, 42%);
+    --dark-color: hsl(0, 0%, 7%);
 }
 
 body{
     background-color: var(--page-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    font-family: Figtree, sans-serif;
+    font-size: 1.6rem;
+
 }
 
 
+.card{
+    background-color: var(--card-background-color);
+    height: 52rem;
+    width: 38rem;
+    border-radius: 2rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+
+    border: 0.15rem solid var(--dark-color);
+    box-shadow: 0.8rem 0.8rem var(--dark-color);
+}
+
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.content-img{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+
+
+
+
+.tag{
+    background-color: var(--page-background-color);
+    padding: 0.6rem 1.2rem;
+    max-width: fit-content;
+    font-size: 1.4rem;
+    font-weight: 800;
+    border-radius: 0.5rem;
+}
+
+
+.info h1{
+    font-weight: 800;
+    font-size: 2.4rem;
+
+}
+
+.info h1:hover{
+    color: var(--page-background-color);
+    cursor: pointer;
+}
+
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.59rem;
+}
+
+.publish-date{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+
+.info-text{
+    font-size: 1.62rem;
+    font-weight: 500;
+    line-height: 2.3rem;
+
+    color: var(--light-color);
+}
+
+
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.user-info img{
+    height: 3.2rem;
+}
+
+.user-info p{
+    font-weight: 800;
+    font-size: 1.4rem;
+}
