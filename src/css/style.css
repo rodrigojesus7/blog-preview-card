@@ -1,0 +1,12 @@
+:root{
+    --page-background-color: hsl(47, 88%, 63%);
+    --card-background-color: hsl(0, 0%, 100%)
+    --light-color: hsl(0, 0%, 42%)
+    --dark-color: hsl(0, 0%, 7%)
+}
+
+body{
+    background-color: var(--page-background-color);
+}
+
+
